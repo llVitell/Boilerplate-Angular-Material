@@ -2,7 +2,7 @@
 @use './_theme-colors' as my-theme;
 
 html {
-  color-scheme: light;
+  color-scheme: light dark;
   @include mat.theme((
     color: (
       primary: my-theme.$primary-palette,

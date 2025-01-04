@@ -2,15 +2,15 @@
 @use './_theme-colors' as my-theme;
 
 html {
-  color-scheme: light dark;
-  @include mat.theme((
-    color: (
-      primary: my-theme.$primary-palette,
-      tertiary: my-theme.$tertiary-palette,
-    ),
-    typography: Nunito,
-    density: 0,
-  ));
+	color-scheme: light dark;
+	@include mat.theme(
+		(
+			color: (
+				primary: my-theme.$primary-palette,
+				tertiary: my-theme.$tertiary-palette
+			),
+			typography: Nunito,
+			density: 0
+		)
+	);
 }
-
-

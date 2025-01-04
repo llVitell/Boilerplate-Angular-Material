@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+.sidenavItem {
+  @include mat.list-overrides((
+    list-item-one-line-container-height: 32px,
+    list-item-leading-icon-size: 21px,
+    list-item-label-text-size: 14px,
+  ));
+}
+
+.sidenavItem[ng-reflect-activated="true"] .mat-mdc-list-item-title {
+  color: var(--mat-sys-primary)
+}
+
+.sidenavItem[ng-reflect-activated="true"] mat-icon {
+  color: var(--mat-sys-primary);
+}
+
+.strokeBtn{
+  @include mat.button-overrides((
+    outlined-container-height: 56px,
+  ));
+}

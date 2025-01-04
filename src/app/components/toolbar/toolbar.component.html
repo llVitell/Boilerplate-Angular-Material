@@ -1,0 +1,55 @@
+<mat-toolbar class="flex w-full justify-between">
+    <a class="flex items-center" href="https://workspace.google.com/intl/es-419/products/drive/" target="_blank">
+      <img src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png" class="h-10 w-10">
+      <span class="ml-2 font-medium">Drive</span>
+    </a>
+    <div class="flex items-center gap-1">
+      <button mat-icon-button matTooltip="Listo para el acceso sin conexión" [matMenuTriggerFor]="offmenu">
+        <mat-icon>offline_pin</mat-icon>
+      </button>
+      <mat-menu #offmenu="matMenu">
+        <button mat-menu-item>
+          <span class="flex items-center gap-4">
+            Vista previa sin conexión
+            <mat-slide-toggle />
+          </span>
+        </button>
+      </mat-menu>
+      <button mat-icon-button matTooltip="Asistencia" [matMenuTriggerFor]="helpmenu">
+        <mat-icon>help</mat-icon>
+      </button>
+      <mat-menu #helpmenu="matMenu">
+        <button mat-menu-item>
+          Ayuda
+        </button>
+        <button mat-menu-item>
+          Capacitación
+        </button>
+        <mat-divider/>
+        <button mat-menu-item>
+          Terminos y políticas
+        </button>
+        <mat-divider/>
+        <button mat-menu-item>
+          Enviar comentarios a Google
+        </button>
+      </mat-menu>
+      <button mat-icon-button matTooltip="Configuración" [matMenuTriggerFor]="settingsmenu">
+        <mat-icon>settings</mat-icon>
+      </button>
+      <mat-menu #settingsmenu="matMenu">
+        <button mat-menu-item>
+          Configuración
+        </button>
+        <button mat-menu-item>
+          Obtener drive para computadoras
+        </button>
+        <button mat-menu-item>
+          Combinaciones de tecla para acceso directo
+        </button>
+      </mat-menu>
+      <button mat-icon-button class="avatar" matTooltip="Cuenta de google">
+        <img src='https://lh3.googleusercontent.com/ogw/AF2bZyjwGm_QT8BLPXmYpRXcIMdsIS08D11sj1bQb7zfh3XoitNM=s32-c-mo' class="rounded-full">
+      </button>
+    </div>
+</mat-toolbar>
